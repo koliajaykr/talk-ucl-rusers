@@ -1,0 +1,244 @@
+---
+pagetitle: "Dynamic Content Using Quarto"
+format: 
+  revealjs:
+    theme: style.scss
+    multiplex: true
+    incremental: true
+    transition: slide
+revealjs-plugins:
+  - attribution
+slide-number: c/t
+---
+
+# DYNAMIC<br>CONTENT<br>USING<br>QUARTO {.right background-image="image/cat.jpg" background-size="contain" background-position="left" background-color="#F3E8EA" #sec-title}
+
+**AJAY KOLI**<br>`r Sys.Date()`<br>*UCL R User Group*
+
+::: attribution
+Photo courtesy of [Sherry Rusinack](https://twitter.com/womensart1/status/1597128261573971968)
+:::
+
+## {background-color="#F3E8EA"}
+
+::: columns
+::: {.column width="60%"}
+<br> ![](image/ajay.png){width="400"}
+
+Dr. Ajay Kumar Koli, PhD <br> Educator & Researcher <br> {{< fa brands github >}} <https://github.com/koliajaykr> <br> {{< fa brands twitter >}} <https://twitter.com/ajay_kolii>
+:::
+
+::: {.column width="40%"}
+### <br> <br> <br> <br> <br> [Hi, there!]{.r-fit-text}
+:::
+:::
+
+# <br>[🤔 Dynamic Content]{.r-fit-text} {background-color="#990000"}
+
+[Analyze. Share. Reproduce.]{.r-fit-text}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: aside
+Source: <https://quarto.org/>
+:::
+
+##  {background-image="image/template_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+##  {background-image="image/source_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+##  {background-image="image/visual_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+##  {background-image="image/yaml_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+##  {background-image="image/text_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+##  {background-image="image/code_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+##  {background-image="image/dynamic_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+## {background-color="#990000"}
+
+::: columns
+::: {.column width="50%"}
+<br> <br> <br> <br>
+
+### [Quarto]{.r-fit-text}
+:::
+
+::: {.column width="50%"}
+<br> <br> ![](image/logo_quarto.png)
+:::
+:::
+
+## "Quarto is next generation version of R Markdown" {background-image="image/gen.jpg" background-opacity="0.4" background-color="#000000"}
+
+::: columns
+::: {.column width="50%"}
+![](image/logo_quarto.png){width="80%"}
+:::
+
+::: {.column width="50%"}
+![](image/rmarkdown_logo.png){fig-width="33%" width="321"}
+:::
+:::
+
+::: attribution
+[Background photo courtesy of]{style="color:#ffffff"} [\@markusspiske](https://images.unsplash.com/photo-1582578598774-a377d4b32223?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80)
+:::
+
+## Quarto {background-color="#F3E8EA"}
+
+"Quarto is a multi-language open-source scientific and technical publishing system"
+
+![](image/dynamic.png){fig-align="center"}
+
+## Quarto {background-color="#F3E8EA"}
+
+"Publish high-quality articles, reports, presentations, websites, blogs, and books."
+
+![](image/dynamic.png){fig-align="center"}
+
+
+## Get Started: Download Quarto {background-color="#F3E8EA"}
+
+![](image/start_quarto1.png)
+
+[Web Link: <https://quarto.org/docs/get-started/>]{.aside}
+
+## Get Started: Choose IDE {background-color="#F3E8EA"}
+
+![](image/start_quarto2.png)
+
+[Web Link: <https://quarto.org/docs/get-started/>]{.aside}
+
+# [🙀 OMG!]{.r-fit-text}{background-color="#990000"}
+
+## Terminal {background-color="#F3E8EA"}
+
+::: columns
+::: {.column width="50%"}
+`quarto --version` ![](image/terminal1.png)
+:::
+
+::: {.column width="50%"}
+`quarto --help` ![](image/terminal2.png)
+:::
+:::
+
+## RStudio: New File {background-color="#F3E8EA"}
+
+![](image/new_file.png)
+
+## RStudio: New Quarto Document {background-color="#F3E8EA"}
+
+![](image/new_quarto_doc.png)
+
+## Quarto File (`.qmd`): Visual Mode {background-color="#F3E8EA"}
+
+![](image/visual_mode2.png){fig-align="right"}
+
+## Quarto File (`.qmd`): Source Mode {background-color="#F3E8EA"}
+
+![](image/source_mode2.png)
+
+##  {background-image="image/source_visual_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+## Div `:::` {background-color="#F3E8EA"}
+
+    :::: {.columns}
+
+    ::: {.column width="50%"}
+    Left column
+    - Apple
+    - Orange
+    - Grapes
+    :::
+
+    ::: {.column width="50%"}
+    Right column
+    - Tea
+    - Coffee
+    - Lemon water
+    :::
+
+    ::::
+
+::: columns
+::: {.column width="50%"}
+Left column.\
+- Apple.\
+- Orange.\
+- Grapes.
+:::
+
+::: {.column width="50%"}
+Right column.\
+- Tea.\
+- Coffee.\
+- Lemon water.
+:::
+:::
+
+## Snippet {background-color="#F3E8EA"}
+
+Type `columns` then press `shit+tab` (in mac)
+
+![](image/snippet.gif){fig-align="center" width="70%"}
+
+::: aside
+More: <https://www.rstudio.com/blog/6-productivity-hacks-for-quarto/>
+:::
+
+## Cross-references {#sec-crossref background-color="#F3E8EA"}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+`![](image/cat.jpg){#fig-cat}`
+
+![Cat](image/cat.jpg){#fig-cat width="45%"}
+:::
+
+::: {.column width="30%"}
+We can give the cross-reference of the cat in @fig-cat using the `@fig-cat`.
+:::
+
+::::
+
+## Cross-references {background-color="#F3E8EA"}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](image/cat.jpg)
+:::
+
+::: {.column width="70%"}
+This cat image is also used in the @sec-title and @sec-crossref.
+
+- `#fig-` $\longrightarrow$ `@fig-` $\longrightarrow$ Figure 
+
+- `#sec-` $\longrightarrow$ `@sec-` $\longrightarrow$ Section
+
+- `#tbl-` $\longrightarrow$ `@tbl-` $\longrightarrow$ Table
+
+- `#eq-` $\longrightarrow$ `@eq-` $\longrightarrow$ Equation
+
+:::
+
+::::
+
+::: aside
+More: <https://quarto.org/docs/authoring/cross-references.html>
+:::
+
+##  {background-image="image/guides_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+##  {background-image="image/presentations_quarto.png" background-size="contain" background-color="#F3E8EA"}
+
+# [Thank you]{.r-fit-text style="color:#990000"}{background-color="#F3E8EA"} 
